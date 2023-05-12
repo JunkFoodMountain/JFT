@@ -1,6 +1,6 @@
 package contract
 
-import "JFM-NFT/contract/models"
+import "JFT/contract/models"
 
 type NFT interface {
 	Getter[models.Nft]

@@ -1,4 +1,4 @@
-module JFM-NFT
+module JFT
 
 go 1.20
 

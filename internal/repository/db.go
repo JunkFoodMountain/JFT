@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"JFM-NFT/contract/models"
+	"JFT/contract/models"
 	"embed"
 	"github.com/google/uuid"
 )

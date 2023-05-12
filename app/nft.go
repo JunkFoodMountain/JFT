@@ -1,6 +1,6 @@
 package app
 
-import "JFM-NFT/contract/models"
+import "JFT/contract/models"
 
 type NFT[T models.Nft] struct {
 }

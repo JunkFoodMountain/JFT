@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
-  title: JFM-NFT
-  description: JFM-NFT
+  title: JFT
+  description: JFT
   version: 1.0.0
 servers:
   - url: 'https'

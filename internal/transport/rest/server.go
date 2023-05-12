@@ -1,14 +1,14 @@
 package rest
 
 import (
-	"JFM-NFT/transport/rest/gen"
+	"JFT/internal/transport/rest/gen"
 	"context"
 )
 
 type JFMHandler struct {
 }
 
-func (J JFMHandler) GetNftById(ctx context.Context, request gen.GetNftByIdRequestObject) (gen.GetNftByIdResponseObject, error) {
+func (J *JFMHandler) GetNftById(ctx context.Context, request gen.GetNftByIdRequestObject) (gen.GetNftByIdResponseObject, error) {
 	//TODO implement me
 	panic("implement me")
 }
