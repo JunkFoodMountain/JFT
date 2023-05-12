@@ -1,0 +1,29 @@
+openapi: 3.0.3
+info:
+  title: JFM-NFT
+  description: JFM-NFT
+  version: 1.0.0
+servers:
+  - url: 'https'
+paths:
+  /nft:
+    get:
+      responses:
+        200:
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Nft'
+      operationId: getNftById
+
+
+components:
+  schemas:
+    Nft:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
