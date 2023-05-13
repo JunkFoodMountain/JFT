@@ -5,10 +5,12 @@ import (
 	"context"
 )
 
+//go:generate oapi-codegen --config server.config.yaml openapi.yaml
+
 type JFMHandler struct {
 }
 
-func (J *JFMHandler) GetNftById(ctx context.Context, request gen.GetNftByIdRequestObject) (gen.GetNftByIdResponseObject, error) {
+func (j *JFMHandler) GetNftByID(ctx context.Context, request gen.GetNftByIdRequestObject) (gen.GetNftByIdResponseObject, error) {
 	//TODO implement me
 	panic("implement me")
 }

@@ -1,17 +1,8 @@
 package app
 
-import "JFT/contract/models"
-
-type NFT[T models.Nft] struct {
+type App struct {
 }
 
-func (n *NFT[T]) Get(id string) models.Nft {
-	return models.Nft{
-		Id:   nil,
-		Name: nil,
-	}
-}
+func (a *App) GetNFT() {
 
-func (n *NFT[T]) GetAll() []models.Nft {
-	return []models.Nft{}
 }

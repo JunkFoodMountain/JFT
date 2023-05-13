@@ -14,4 +14,6 @@ CREATE TABLE nft
 -- +goose Down
 -- +goose StatementBegin
 SELECT 'down SQL query';
+
+DROP TABLE nft
 -- +goose StatementEnd
