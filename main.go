@@ -11,7 +11,7 @@ import (
 func main() {
 	e := echo.New()
 
-	handler := rest.JFMHandler{}
+	handler := rest.JFTHandler{}
 
 	gen.RegisterHandlers(e, gen.NewStrictHandler(&handler, nil))
 

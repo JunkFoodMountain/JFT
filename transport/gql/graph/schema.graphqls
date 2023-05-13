@@ -1,0 +1,34 @@
+scalar UUID
+scalar DateTime
+
+type Query {
+  nft(input: GetNFT!): NFT!
+}
+
+type Mutation {
+  createNFT(input: CreateNFT!): NFT!
+  deleteNFT(input: GetNFT!): NFT!
+  updateNFT(input: UpdateNFT!): NFT!
+}
+
+input GetNFT {
+  id: UUID!
+}
+
+input CreateNFT {
+  name: String!
+}
+
+input UpdateNFT {
+  id: UUID!
+  name: String!
+}
+
+type NFT {
+  id: UUID!
+  name: String!
+
+  createdAt: DateTime!
+  updatedAt: DateTime
+}
+

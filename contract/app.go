@@ -1,7 +1,10 @@
 package contract
 
-import "JFT/contract/models"
+import (
+	"JFT/contract/models"
+	"github.com/google/uuid"
+)
 
 type App interface {
-	Getter[models.Nft]
+	GetNFTByID(id uuid.UUID) (models.Nft, error)
 }

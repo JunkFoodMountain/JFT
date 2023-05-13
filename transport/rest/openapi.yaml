@@ -15,7 +15,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Nft'
-      operationId: getNftById
+      operationId: getNftByID
 
 
 components:
