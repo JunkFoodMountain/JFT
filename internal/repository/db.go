@@ -11,6 +11,7 @@ import (
 )
 
 //go:generate go run ./cmd/generate_database.go
+//go:generate sqlboiler --wipe psql
 //go:embed migrations/*.sql
 var embedMigrations embed.FS
 

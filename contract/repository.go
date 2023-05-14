@@ -1,12 +1,11 @@
 package contract
 
 import (
-	"JFT/contract/models"
 	"github.com/google/uuid"
 )
 
 type NFTRepository interface {
-	Getter[models.Nft]
+	Getter[Nft]
 }
 
 type Getter[T any] interface {

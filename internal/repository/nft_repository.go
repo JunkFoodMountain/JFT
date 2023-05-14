@@ -1,11 +1,11 @@
 package repository
 
 import (
-	"JFT/contract/models"
+	"JFT/contract"
 	"github.com/google/uuid"
 )
 
-type NFTRepository[T models.Nft] struct {
+type NFTRepository[T contract.Nft] struct {
 }
 
 func (N NFTRepository[T]) GetOne(uuid uuid.UUID) (*T, error) {
